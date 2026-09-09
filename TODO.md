@@ -1,17 +1,18 @@
 # homelab to-dos
 
 ## general
-- UPS integration / LXC / docker container
 
-## `grimescloud.com`
-### subdomains?
-- `media.grimescloud.com`
-  - `movies.grimescloud.com`
-  - `shows.grimescloud.com`
-  - `seer.grimescloud.com`
-- `photos.grimescloud.com`
+## rpi-alpha
+### Network UPS Tools (NUT) server
+- NUT data server
+- NUT clients on `nas` and `pve`
 
-## reverse proxy
+## rpi-beta
+
+## nas
+
+## pve
+### reverse proxy
 1. automate dyanmic IP updates
   - DDNS client via docker container
     - cloudfalre: `oznu/cloudflare-ddns`?
@@ -21,3 +22,4 @@
     - config file: `/etc/nginx/sites-available/homelab.conf`
 3. automate SSL certs
   - install `certbot` and `nginx` plugin
+  
