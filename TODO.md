@@ -6,6 +6,10 @@
 ### Network UPS Tools (NUT) server
 - NUT data server
 
+### pi-hole, adblock, unbound
+- add unbound as the DNS resolver under pi-hole
+- combine pi-hole with adblock?
+
 ## rpi-beta
 
 ## nas
