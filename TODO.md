@@ -15,7 +15,9 @@
 ## pve
 - NUT client (on proxmox host?)
   - feed data to every LXC and VM (standard code?)
-- 
+- add second SSD
+  - wipe disk, *LVM-Thin*?, etc.
+  - use as storage pool for new LXCs/VMs
 
 ### (service) VPN
 - gluetun or wireguard as standalone service
@@ -37,4 +39,5 @@
     - config file: `/etc/nginx/sites-available/homelab.conf`
 3. automate SSL certs
   - install `certbot` and `nginx` plugin
-  
+
+### (service) home assistant?
