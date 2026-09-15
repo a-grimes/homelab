@@ -26,6 +26,18 @@
 ### (service) VPN
 - gluetun or wireguard as standalone service
 - direct other services that need discretion (LXCs/VMs) through this service
+- [proxmox vm networking](https://industrialmonitordirect.com/blogs/knowledgebase/proxmox-vm-networking-gluetun-tailscale-traefik-architecture)
+  - standalone `gluetun`
+
+### (service) *arr stack
+#### OS: Debian?
+|CPUs|RAM|Storage (SDD)|
+|---|---|---|
+|?|?GB|?GB|
+- migrate from nas docker to pve docker inside VM
+- setup docker compose with current (working) versions
+- copy config files?
+- reduce quality (1.5-2GB per 1080p hour?)
 
 ### (service) immich
 
