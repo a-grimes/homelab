@@ -1,6 +1,18 @@
 # homelab to-dos
 
 ## general
+### new linux VM start up
+- qemu-guest-agent: install and/or enable + start
+- openssh-server install (and start)
+- curl
+- wget
+- ca-certificates
+- git
+- vim
+- htop
+- nfs-common
+
+### backups
 
 ## rpi-alpha
 ### Network UPS Tools (NUT) server
@@ -14,30 +26,26 @@
 
 ## nas
 - NUT client
-- enable NFS share for access to data
+- enable NFS share for access to *media*, *photos*
 
 ## pve
 - NUT client (on proxmox host?)
   - feed data to every LXC and VM (standard code?)
-- add second SSD
-  - wipe disk, *LVM-Thin*?, etc.
-  - use as storage pool for new LXCs/VMs
+- backup `pve` important folders to local SSD
+  
+  - Configuration	Location
+  - Proxmox configuration, VM definitions, storage	/etc/pve
+  - Network interfaces and VLAN configuration	/etc/network/interfaces
+  - Storage mount configuration	/etc/fstab
+  - Hostname and DNS configuration	/etc/hostname, /etc/hosts, /etc/resolv.conf
+  - Systemd services, including NIC workarounds	/etc/systemd/system
+- backup SSD backups to `nas` - automated from `pve`?
 
 ### (service) VPN
 - gluetun or wireguard as standalone service
 - direct other services that need discretion (LXCs/VMs) through this service
 - [proxmox vm networking](https://industrialmonitordirect.com/blogs/knowledgebase/proxmox-vm-networking-gluetun-tailscale-traefik-architecture)
   - standalone `gluetun`
-
-### (service) *arr stack
-#### OS: Debian?
-|CPUs|RAM|Storage (SDD)|
-|---|---|---|
-|?|?GB|?GB|
-- migrate from nas docker to pve docker inside VM
-- setup docker compose with current (working) versions
-- copy config files?
-- reduce quality (1.5-2GB per 1080p hour?)
 
 ### (service) immich
 
